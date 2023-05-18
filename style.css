@@ -50,6 +50,7 @@ a {
 }
 a:hover {
   color: var(--Blue);
+  font-weight: 700;
 }
 .header {
   display: flex;
@@ -133,13 +134,12 @@ a:hover {
   flex: 1;
 }
 
-textarea {
+#textArea {
   width: 100%;
   margin-top: 8px;
-
   outline: none;
   border: 1px solid var(--Light-grayish-blue-1);
-  max-height: 250px;
+  max-height: 100%;
   resize: none;
   overflow-y: hidden;
   padding: 10px;
@@ -147,9 +147,10 @@ textarea {
   font-weight: 500;
   cursor: pointer;
   border-radius: 10px;
+  transition: 0.4s;
 }
 
-textarea:hover {
+#textArea:hover {
   background-color: var(--Light-grayish-blue-1);
 }
 .attribution {
@@ -158,4 +159,55 @@ textarea:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  main {
+    padding: 15px 10px;
+  }
+  .headerText {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+  }
+
+  .readMsg {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .left-side span {
+    padding: 3px 7px;
+  }
+  .userPic {
+    width: 35px;
+    margin-right: 12px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .userMessages {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .chessImg {
+    width: 40px;
+  }
+
+  .redDot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .specialUser {
+    padding: 7px;
+  }
+  #textArea {
+    padding: 4px 10px;
+    border-radius: 0;
+    font-size: 11px;
+  }
 }
