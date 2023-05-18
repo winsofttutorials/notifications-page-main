@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf)
+    format("opentype");
+  font-weight: 100 900;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  -light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "PlusJakartaSans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Light-grayish-blue-1);
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  font-size: 12;
+}
+
+main {
+  width: 80%;
+  max-width: 600px;
+  background: var(--White);
+  padding: 15px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Very-dark-blue);
+  font-weight: 700;
+}
+a:hover {
+  color: var(--Blue);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.headerText {
+  font-size: 18px;
+  color: var(--Very-dark-blue);
+}
+
+.left-side span {
+  padding: 2px 10px;
+  background-color: var(--Very-dark-blue);
+  color: var(--White);
+  font-weight: 700;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.readMsg {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.readMsg:hover {
+  color: var(--Blue);
+}
+
+.userMessages {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--Very-light-grayish-blue);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.userPic {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.specialUser {
+  background-color: transparent;
+}
+
+.redDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--Red);
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.picComment {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.chessImg {
+  width: 40px;
+}
+
+.userText {
+  flex: 1;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 8px;
+
+  outline: none;
+  border: 1px solid var(--Light-grayish-blue-1);
+  max-height: 250px;
+  resize: none;
+  overflow-y: hidden;
+  padding: 10px;
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+textarea:hover {
+  background-color: var(--Light-grayish-blue-1);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
