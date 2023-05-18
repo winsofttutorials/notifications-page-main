@@ -32,7 +32,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./design/Both%20views.png)
-![](./design/Both%20views.png)
 ![](./design/MobileView.png)
 ![](./design/Active-state1.png)
 ![](./design/Active%20State2.png)
